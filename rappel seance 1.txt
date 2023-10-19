@@ -1,0 +1,12 @@
+les langages front end : 
+html (contenu)
+css  (style)
+javascript (programmation )
+
+Editeur : pour ecrire le code source (d'un langage )
+IDE : Environnement (Editeur) de developpement integre => Editeur 
+ 
+code source : ensemble des instructions donnees a la machine pour realiser une tache 
+
+
+interpreteur : logiciel qui execute les inscrutions presentes dans le code source
