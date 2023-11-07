@@ -1,0 +1,21 @@
+header{
+  width: 1000px;
+  height: 200px;
+  background-color: rgb(173, 251, 173);  
+  margin: auto;
+
+}
+main{
+  width: 1000px;
+  min-height: 400px;
+  background-color: rgb(68, 244, 68);  
+  margin: auto;
+
+}
+footer{
+  width: 1000px;
+  height: 50px;
+  background-color: rgb(2, 60, 2);  
+  margin: auto;
+
+}

@@ -1,0 +1,28 @@
+header{
+    width: 1000px;
+    margin: auto;
+  height: 200px;
+  background: rgb(174, 7, 7); 
+}
+main{
+    width: 1000px;
+    margin: auto;
+  min-height: 400px;
+  background: rgb(202, 200, 200);
+  border: solid;  
+}
+footer{
+    width: 1000px;
+    margin: auto;
+  height: 50px;
+  background: rgb(45, 45, 45);  
+}
+p img{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+
+}
+header img{
+    width: 200px;
+}

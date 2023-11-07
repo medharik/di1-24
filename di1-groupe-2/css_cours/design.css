@@ -1,0 +1,18 @@
+body{
+    font-family: Verdana, sans-serif;
+
+}
+h2,h1{
+    color: green;
+    background:rgba(0, 128, 0, 0.36);
+    text-align: center;
+}
+
+p{
+    text-align: justify;
+    background: green;
+    color: blue;
+    border: solid red 2px  ;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

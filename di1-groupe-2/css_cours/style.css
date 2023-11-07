@@ -1,0 +1,39 @@
+ /* CSS : CASCADING STYLE SHEETS OU feuilles de styles en cascade
+role principal : DEFINIR LA PRESENTATION GRAPHIQUE / DESIGN / STYLE  D'UNE PAGE WEB (HTML,XML,...)
+ AVANTAGES  :  
+SEPARER LE STYLE (CSS) DU CONTENU (HTML) 
+redefinir le style par defaut des balises html
+creer des styles uniques (id)
+creer des styles repetitifs 
+... */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2,h1{
+    color: green;
+    text-align: center;
+    background: rgb(206, 255, 219);
+    border: solid green 2px;
+   
+}
+p{
+    color: rgba(0, 0, 0, 0.711);
+    text-align: center;
+    text-indent: 20px;
+    text-align: justify;
+    color: green;
+    color: red;
+   
+}
+img{
+    width: 100%;
+}
+
+
+
+
+
+
+
