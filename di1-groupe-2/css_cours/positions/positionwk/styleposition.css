@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#parent{
+    width: 1000px;
+    height: 800px;
+    background-color: pink;
+    margin: auto;
+    position: relative;
+}
+.enfant{
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 6em;
+}
+#d1{
+    background-color: red;
+    /* margin-top: 200px; */
+    position: sticky;
+    top: 20px;
+    z-index: 99999999;
+}
+#d2{
+    background-color: green;
+    position: relative;
+    left: 50px;
+    top: -50px;
+    z-index: 10;
+}
+#d3{
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+#d4{
+    background-color: purple;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+}
+/* les positions :
+relative : l'element html se posiotionne 
+par rapport a sa position initiale
+absolute : se deplace par rapport au au premier parent relatif
+fixed : comme absolute sauf reste fixe au defilement  
+*/

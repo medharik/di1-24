@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+#menu1{
+background: #105A33;
+}
+#menu1 ul {
+list-style: none;
+text-align: center;
+}
+#menu1 ul li{
+    display: inline-block;
+   
+}
+#menu1 a{
+display: block;
+padding: 10px;  
+color: rgb(223, 219, 219);
+text-decoration: none;
+font-family: sans-serif;
+padding-left: 30px;
+}
+
+#menu1 a:hover{
+background: black;
+color: white;
+}

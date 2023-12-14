@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#menu{
+    width: 100%;
+    height: 40px;
+    background-color: #690c36;
+margin-bottom: 10px;
+}
+#banner{
+width: 100%;
+height: calc(100vh - 50px);
+background: #690c36 url('images/lacoste-dance-funny-jump-wallpaper.jpg') fixed no-repeat ;
+background-size:cover ;
+background-position-y: center;
+background-position-x: center;
+
+/* background-attachment: fixed; */
+display: flex;
+}
+
+#banner h1{
+    /* background: rgba(0, 0, 0, 0.278);
+color: rgba(175, 153, 153, 0.85);
+text-align: center;
+width: 80%;
+margin: auto;
+font-size: 6em;
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+text-shadow: 3px 3px 3px rgb(0 0 0 / 82%);
+padding: 80px; */
+text-align: center;
+width: 50%;
+margin: auto;
+font-size: 5em;
+font-family: 'Poppins', sans-serif;
+color: white;
+text-shadow: 3px 3px 3px rgb(0 0 0 / 82%);
+}
+h1 span{
+    color: green;
+}
+
+#catalogue{
+    width: 1200px;
+    min-height:600px ;
+margin: auto;
+
+}
+#catalogue li img{
+width: 100%;
+}
+#catalogue ul{
+    list-style:none;
+}
+#catalogue li{
+    display: inline-block;
+    width: calc(33.33% - 42px);
+    height: auto;
+    border: 2px solid  rgba(0, 0, 0, 0.061);
+    font-family: 'Poppins', sans-serif;
+color: rgb(36, 35, 35);
+padding: 16px;
+
+}

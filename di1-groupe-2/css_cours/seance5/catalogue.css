@@ -1,0 +1,26 @@
+*{
+    margin: 0;padding: 0;
+}
+#catalogue{
+    width: 100%;
+    min-height: 600px;
+    background: rgba(4, 4, 220, 0.115);
+    margin: auto;
+}
+#catalogue ul{
+    list-style: none;
+}
+
+#catalogue li{
+    border: solid 2px rgba(0, 0, 0, 0.069);
+    display: inline-block;
+    width: calc(25% - 37px);
+    height: auto;
+    padding: 15px;
+}
+#catalogue li img{
+    width: 100%;
+}
+#catalogue h5, #catalogue h6{
+    padding: 10px;
+}

@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#conteneur{
+    background: yellow;
+    width: 1400px;
+    height: 5000px;
+    margin-top: 100px;
+    /* position: relative; */
+}
+#parent{
+    width: 1000px;
+    height: 2000px;
+    background-color: pink;
+    margin: auto;
+}
+.child{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    font-size: 6em;
+    text-align: center;
+}
+#e1{
+    background-color: red;
+    position: sticky;
+    top: 50px;
+}
+#e2{
+    background-color: green;
+    position: relative;
+    left: 30px;
+    top: 20px;
+    z-index: 2;
+}
+#e3{
+    background-color: blue;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#e4{
+background-color: rgba(255, 0, 255, 0.479);
+position: fixed;
+top: 0;
+right: 0;
+
+}
+/* position static : position par defaut
+position: relative; l'element  se positionne par rapport a sa position courante
+position : absolute => se positionne p/r au au premier parent relative
+poistion:fixed : comme absolute mais reste fixe au defilement
+position: sticky : s'arrete des qu'il arrive a la position top 
+*/

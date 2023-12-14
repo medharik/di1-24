@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#catalogue{
+    width: 100%;
+    min-height: 500px;
+    /* background: greenyellow; */
+    margin: auto;
+}
+
+#catalogue ul{
+    list-style: none;
+}
+#catalogue ul li{
+    border:2px solid  rgba(0, 0, 0, 0.155);
+    width: calc(33.33% - 3px);
+    display: inline-block;
+    /* height: 500px; */
+    /* pour garder les memes diemensions meme si on ajouter les bordures et padding */
+    box-sizing: border-box;
+    margin-bottom: 4px;
+    padding: 16px;
+    position: relative;
+}
+#catalogue h3, #catalogue h4{
+    font-family: sans-serif;
+    color: rgb(25, 24, 24);
+    line-height: 18px;
+    font-style: italic;
+}
+#catalogue img{
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+#catalogue li:hover img{
+    transform: scale(0.9);
+    transition: 2s;
+}
+#catalogue li h4{
+    background: red;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border: dashed;
+    top: 0;
+    right: 0;
+    
+
+}

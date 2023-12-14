@@ -1,0 +1,32 @@
+/* les classes : sont des styles repetitifs 
+les ids : sont des style uniques
+*/
+
+#unique{
+    background: red;
+}
+.mame{
+    width: 1000px;
+    margin:auto;
+}
+.b{
+    border: solid;
+}
+
+header{
+
+    height: 200px;
+    background-color: green ;
+
+
+}
+main{
+  
+    min-height: 400px;
+    background: rgb(173, 239, 173);
+}
+footer{
+
+    height: 50px;
+    background: rgb(2, 107, 2);
+}
