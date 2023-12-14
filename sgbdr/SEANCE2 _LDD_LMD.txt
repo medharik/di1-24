@@ -1,0 +1,15 @@
+-- requete SQL pour creer une base de donnees : dbrev
+-- CREATE DATABASE dbrev2
+-- requete SQL pour creer une table : produit
+-- CREATE TABLE produit(
+-- id  INT PRIMARY KEY AUTO_INCREMENT ,
+-- libelle VARCHAR(50),
+-- prix float,
+-- qtestock INT DEFAULT 0 
+-- ) 
+-- afficher la structure de la table produit :
+-- desc produit
+-- SQL : LDD : CREATE table , DROP table (detruire une table) , ALTER table (modifier la structure d'une table)
+-- detruire la table produit 
+-- DROP TABLE produit
+ALTER table produit  add marque varchar(50)

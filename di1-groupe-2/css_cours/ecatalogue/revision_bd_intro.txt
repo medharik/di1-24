@@ -34,3 +34,5 @@ prix FLOAT
 
 -- pour afficher la structure de cette table 
 describe produit 
+
+
