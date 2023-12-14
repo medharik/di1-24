@@ -1,0 +1,36 @@
+
+SGBDR 
+terminologie : 
+base de donnees : ensemble de donnees structurees et persitente
+donnee : element ou unite de donnee, peut representer une realite physique ou virtuelle.
+SGBDR :
+Systeme de Gestion de Base de Donnees Relationnelles : c'est un logiciel qui gere
+les bases de donnees 
+
+MS ACCESS 
+MS SQL SERVER 
+ORACLE 
+MySQL SERVER 
+PostgreSQL
+...
+
+
+une base de donnees relationnelle : ensemble de tables en relation
+
+-- SQL : STRUCTUERED QUERY LANGUAGE => langage de requetes structurees
+-- sous langage 1 de sql : LDD : langage de definition des donnees , basé sur 3 commandes :
+-- create , drop , alter 
+-- exemple 
+
+-- creer une base de donnees 
+CREATE DATABASE dbproducts
+
+-- creer une table produit (id,libelle,prix) dans la base de donnees dbproducts
+CREATE TABLE produit(
+id  INT PRIMARY KEY AUTO_INCREMENT   ,
+libelle VARCHAR(20),
+prix FLOAT 
+)
+
+-- pour afficher la structure de cette table 
+describe produit 
