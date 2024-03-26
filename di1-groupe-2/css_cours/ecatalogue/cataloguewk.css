@@ -78,3 +78,49 @@ transition: 1s;
 .vert{
     background-color: green;
 }
+
+
+@media screen and (max-width: 500px) {
+ #catalogue{
+    width: 100%;
+    background: red;
+ }   
+ .produit{
+    width: 100%;
+ }
+}
+
+@media screen and (max-width: 900px) and (min-width:501px) {
+ #catalogue{
+    width: 100%;
+    background: green;
+ }   
+ .produit{
+    width: calc(50% - 4px);
+ }
+}
+
+@media screen and (max-width: 1400px) and (min-width:1200px) {
+ #catalogue{
+    width: 100%;
+    background: green;
+ }   
+ .produit{
+    width: calc(25% - 4px);
+ }
+}
+
+@media screen and (min-width: 1400px)  {
+ #catalogue{
+    width: 1300px;
+    background: rgb(128, 0, 79);
+ }   
+ .produit{
+    width: calc(20% - 4px);
+ }
+}
+@media print{
+    .promo{
+        display: none;
+    }
+}

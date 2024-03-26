@@ -1,4 +1,5 @@
 
+SEANCE 1 :
 SGBDR 
 terminologie : 
 base de donnees : ensemble de donnees structurees et persitente
@@ -34,3 +35,5 @@ prix FLOAT
 
 -- pour afficher la structure de cette table 
 describe produit 
+
+

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>facture en ligne</title>
+</head>
+<body>
+<button onclick="afficher()">Afficher les lignes de la facture</button>
+<button onclick="supprimer()">supprimer la derniere ligne</button>
+    <table width="90%" align="center" border="1">
+        <thead>
+            <tr>
+                <th>ref</th>
+                <th>description</th>
+                <th>prix</th>
+                <th>qte</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody id="corps">
+          
+
+        </tbody>
+    </table>
+    
+
+
+
+    <script>
+//fonction pour afficher les lignes du tableau de la facture
+let desc=['hp','dell','acer'];
+let prix=[8000,3000,9000];
+let  qte=[1,4,5];
+
+
+
+//definition de la fonction
+
+function afficher() {
+    let c= document.getElementById('corps');
+// 
+c.innerHTML=""; //on vide le contenu de corps avant d'ajouter des nouvelles lignes
+
+    for (let i = 0; i <desc.length; i++) {
+     
+        c.innerHTML +="<tr><td>"+(i+1)+"</td>    <td>"+ desc[i]  +"</td>    <td>"+ prix[i]+"</td>    <td>"+ qte[i] +"</td>    <td>"+prix[i]*qte[i]+"</td></tr>";
+        
+    }
+    
+}
+function ajouter() {
+    
+}
+function supprimer() {
+    
+    desc.pop();
+    afficher();
+
+    
+}
+function calculerttc(){
+
+}
+
+//appel / execution de la fonction
+// afficher();
+    </script>
+</body>
+</html>

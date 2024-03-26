@@ -13,3 +13,17 @@
 -- detruire la table produit 
 -- DROP TABLE produit
 ALTER table produit  add marque varchar(50)
+
+
+create database dbemp
+
+CREATE TABLE produit(
+id INT  PRIMARY KEY AUTO_INCREMENT  ,
+libelle  VARCHAR(50) ,
+prix  FLOAT default 0
+)
+
+ALTER TABLE produit  ADD qte INT 
+ALTER TABLE produit  drop  qte 
+ALTER TABLE produit MODIFY prix INT  
+ALTER TABLE produit RENAME COLUMN libelle TO lib
