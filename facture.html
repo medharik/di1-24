@@ -6,8 +6,19 @@
     <title>facture en ligne</title>
 </head>
 <body>
+  <div style="text-align: center;margin-bottom: 20px;margin-top: 20px;">
+    <input type="text" placeholder="Entrer une description" id="description"> 
+    <input type="text" placeholder="Entrer un prix" id="prix"> 
+    <input type="text" placeholder="Entrer une quantite" id="qte">
+    <button onclick="ajouter()">Ajouter le produit</button> 
+    <br><br>
+  </div>
+
+
 <button onclick="afficher()">Afficher les lignes de la facture</button>
 <button onclick="supprimer()">supprimer la derniere ligne</button>
+
+
     <table width="90%" align="center" border="1">
         <thead>
             <tr>
@@ -20,44 +31,42 @@
         </thead>
         <tbody id="corps">
           
-
         </tbody>
     </table>
-    
-
-
-
-    <script>
+<script>
 //fonction pour afficher les lignes du tableau de la facture
 let desc=['hp','dell','acer'];
 let prix=[8000,3000,9000];
 let  qte=[1,4,5];
-
-
-
+let smia=document.getElementById('description');
+    let tamane=document.getElementById('prix');
+    let qt=document.getElementById('qte');
 //definition de la fonction
-
 function afficher() {
     let c= document.getElementById('corps');
-// 
-c.innerHTML=""; //on vide le contenu de corps avant d'ajouter des nouvelles lignes
-
+    c.innerHTML=""; //on vide le contenu de corps avant d'ajouter des nouvelles lignes
     for (let i = 0; i <desc.length; i++) {
-     
-        c.innerHTML +="<tr><td>"+(i+1)+"</td>    <td>"+ desc[i]  +"</td>    <td>"+ prix[i]+"</td>    <td>"+ qte[i] +"</td>    <td>"+prix[i]*qte[i]+"</td></tr>";
-        
-    }
-    
+    c.innerHTML +="<tr><td>"+(i+1)+"</td>    <td>"+ desc[i]  +"</td>    <td>"+ prix[i]+"</td>    <td>"+ qte[i] +"</td>    <td>"+prix[i]*qte[i]+"</td></tr>";
+    }   
 }
 function ajouter() {
     
+    desc.push(smia.value);
+    prix.push(tamane.value);
+    qte.push(qt.value);
+    afficher();
+    clear();
+
+}
+function clear(){
+    smia.value=""
+    tamane.value=""
+    qt.value=""
 }
 function supprimer() {
-    
-    desc.pop();
-    afficher();
-
-    
+//supprime le dernier element du tableau 
+   desc.pop();
+   afficher();
 }
 function calculerttc(){
 
