@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar </title>
+    <link rel="stylesheet" href="navbar.css">
+</head>
+<body>
+ <nav class="navbar">
+    <div class="logo">LOGO</div>
+    <label for="check" class="toggle">menu <input type="checkbox"  id="check"></label>
+    <ul class="menu" style="display: none;">
+        <li><a href="">item01</a></li>
+        <li><a href="">item02</a></li>
+        <li><a href="">item03</a></li>
+        <li><a href="">item04</a></li>
+        <li><a href="">item05</a></li>
+    </ul>
+ </nav>
+ <script>
+
+     const toggle = document.querySelector('#check');
+     const menu = document.querySelector('.menu');
+     show(true);
+    function show(etat) {
+        menu.style.display=etat? "flex":"none";
+    }
+   window.onresize=()=>{
+    if(window.innerWidth>768){show(true)}
+    else show(false);
+   }
+    document.querySelector('#check').addEventListener('change',()=>{
+      show(!check.checked);
+    });
+ </script>
+</body>
+</html>

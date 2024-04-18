@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>menu flex box responsive</title>
+    <link
+      rel="stylesheet"
+      href="menug2.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <button class="btn"><i class="fa-solid fa-bars bar"></i></button>
+    <nav class="menu">
+      <a href="">Element 1</a>
+      <a href="">Element 2</a>
+      <a href="">Element 3</a>
+      <a href="">Element 4</a>
+      <a href="">Element 5</a>
+      <a href="">Element 6</a>
+      <a href="">Qui sommes nous</a>
+    </nav>
+
+    <script>
+      let menu = document.querySelector(".menu");
+      let btn = document.querySelector(".btn");
+      //definir de la fonction afficher
+      function afficher() {
+        menu.style.display = "flex";
+      }
+      function masquer() {
+        menu.style.display = "none";
+      }
+      function showHide() {
+        if (menu.style.display == "none") {
+          afficher();
+        } else {
+          masquer();
+        }
+      }
+      function handle_resize() {
+        let largeur = window.innerWidth;
+        //    alert("largeur est "+largeur);
+        if (largeur >= 769) {
+          afficher();
+        }else{
+            masquer();
+        }
+      }
+      //appel (execution) de la fonction
+      //   masquer();
+      btn.onclick = showHide;
+      window.onresize = handle_resize;
+    </script>
+  </body>
+</html>

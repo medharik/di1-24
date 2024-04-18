@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background: yellowgreen;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+.menu > a{
+    /* border: solid; */
+color: rgb(7, 25, 1);
+text-decoration: none;
+padding: 10px;
+font-family: sans-serif;
+}
+.menu > a:hover {
+    background: rgb(7, 25, 1);
+    color: white;
+}
+button{
+    color: green;
+    font-size: 2em;
+    border: none;
+    background: rgb(192, 233, 192);
+    padding: 4px;
+}
+
+button{
+    display: none;
+}
+
+@media screen and (max-width:600px) {
+    .menu{
+        flex-direction: column;
+        display: none;
+    }
+    button{
+        display: block;
+    }
+}

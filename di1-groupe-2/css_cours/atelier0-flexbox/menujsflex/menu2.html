@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu responsive</title>
+    <link rel="stylesheet" href="menu.css">
+</head>
+<body>
+    <label>
+        Menu
+        <input type="checkbox" name="toggle" id="toggle" onchange="show_hide()"/>
+    </label>
+   <nav class="menu">
+        <a href="">Element 1</a><a href="">Element 2</a><a href="">Element 3</a><a href="">Element 4</a><a href="">Element 5</a>
+    </nav>
+    
+    <script>
+        //definir la fonction
+        let i=0;
+        let menu=document.querySelector(".menu");
+
+        function show_hide() {
+        i++;
+       if (i%2==0) {
+        menu.style.display="flex";
+    } else {
+        menu.style.display="none";
+        
+       }
+        }
+        // appeler la fonction
+// show_hide();
+
+
+    </script>
+</body>
+</html>
