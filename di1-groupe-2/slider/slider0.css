@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.slider{
+    width: 1000px;
+    /* height: 500px; */
+    background: yellowgreen;
+    margin: auto;
+}
+#controles{
+    /* background: green; */
+    width: 1000px;
+margin: auto;
+text-align: center;
+}
+#controles > button{
+font-size: 2em;
+padding: 10px;
+background: blue;
+color: white;
+border: none;
+cursor: pointer;
+}
+.slider > img{
+width: 100%;
+}

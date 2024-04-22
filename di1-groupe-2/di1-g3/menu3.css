@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.menu{
+  background: pink; 
+  display: flex;
+  flex-direction: row;
+justify-content: flex-end;
+}
+.menu a {
+    padding: 5px;
+    text-decoration: none;
+    border: 1px  solid  red;
+font-family: sans-serif;
+}
+.menu a:hover{
+    background: red;
+    color: white;
+}
+
+@media screen and (max-width:564px) {
+    .menu{
+        flex-direction: column;
+        background: green;
+    }
+}

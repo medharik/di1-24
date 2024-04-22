@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider numero 1 </title>
+    <link rel="stylesheet" href="slider0.css">
+</head>
+<body>
+    <div class="slider">
+        <img src="images/s1.jpg" alt="" id="tof">
+    </div>
+<div id="controles">
+    <button onclick="clickBtn(1)">1</button>
+    <button onclick="clickBtn(2)">2</button>
+    <button onclick="clickBtn(3)">3</button>
+</div>
+    
+<script>
+    let image=document.querySelector('#tof');
+    function clickBtn(numero) {
+        if(numero==1)         image.src="images/s1.jpg";
+        else if(numero==2)    image.src="images/s2.jpg";
+        else                  image.src="images/s3.jpg";
+    }
+  
+</script>
+</body>
+</html>
