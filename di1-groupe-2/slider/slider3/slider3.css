@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#slider{
+    background: green;
+    height: auto;
+}
+#slider img{
+    width: 100%;
+}
+#boutons{
+    background: rgb(0, 115, 128);
+    height: auto;
+    text-align: center;
+}
+#boutons button{
+    font-size: 3em;
+    padding: 5px;
+    margin: 4px;
+}
+.large{
+    width: 1000px;
+    margin: auto;
+}
