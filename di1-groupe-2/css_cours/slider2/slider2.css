@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#slider{
+background: rgb(165, 165, 248); 
+height: auto;
+
+}
+#boutons{
+   background: rgb(76, 76, 238); 
+   text-align: center;
+  
+}
+#boutons  button  {
+padding: 10px;
+font-size: 2em;
+background: green;
+color: white;
+cursor: pointer;
+}
+
+.large{
+    width: 1000px ;
+    margin: auto;
+}
+#slider img{
+ width: 100%;   
+}

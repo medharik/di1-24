@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>slider numero 2</title>
+    <link
+      rel="stylesheet"
+      href="slider2.css"
+    />
+  </head>
+  <body>
+    <div
+      id="slider"
+      class="large"
+    >
+    <img src="images/s1.jpg">
+     
+    </div>
+    <div
+      id="boutons"
+      class="large"
+    >
+      <button onclick="changer(1)" >1</button>
+      <button onclick="changer(2)" >2</button>
+      <button onclick="changer(3)" >3</button>
+    
+    </div>
+    <script>
+ 
+ let image=document.querySelector('#slider img');
+        //definition de la fct
+function changer(numero) {
+if (numero==1) {
+    image.src="images/s1.jpg";
+}
+if (numero==2) {
+    image.src="images/s2.jpg";
+}
+if (numero==3) {
+    image.src="images/s3.jpg";
+}
+
+}
+
+    </script>
+  </body>
+</html>
