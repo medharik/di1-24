@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider 1 </title>
+    <link rel="stylesheet" href="s.css">
+</head>
+<body>
+    
+    <div id="slider"  class="large">
+        <img src="s2.jpg" alt="">
+    </div>
+    <div id="controle" class="large">
+       <button onclick="afficher(1)" >1</button>
+       <button onclick="afficher(2)">2</button>
+       <button onclick="afficher(4)">3</button>
+    
+    </div>
+
+    <script>
+        //definition de la fct
+function afficher(numero) {
+    //recuperer l'image 
+    let t=document.querySelector("#slider img");
+    if (numero==1)         t.src="s1.jpg";
+    
+   else if (numero==2)         t.src="s2.jpg";
+    
+    else if (numero==3)     t.src="s3.jpg";
+    else alert("erreur");
+    
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#formdiv{
+    background: pink;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+  
+    gap: 20px;
+    padding: 10px;
+}
+#formdiv input[type="text"]{
+    border: none;
+    background: transparent;
+    text-align: center;
+    border-bottom: 2px solid #0000001c;
+    font-size: 0.8rem;
+    padding: 5px;
+
+}
+#formdiv button{
+    width: 200px;
+    align-self: center;
+    width: 100px;
+    color: white;
+    background: rgba(0, 0, 0, 0.833);
+}
