@@ -63,13 +63,42 @@
 </form> -->
 <div >
     <form action="" id="formdiv">
-        <label for="signup">Sign up for Exclusive access
+        <label id="lab" for="signup">Sign up for Exclusive access
         </label>
         <input  type="text" name="email3" id="email3" placeholder="Enter your email here">
-       <button>Send</button>
+       <button type="button" onclick="checkerEmail()" >Send</button>
     </form>
 </div>
 
 
+
+<script>
+//definir la fonction 
+function checkerEmail() {
+    // recuperer l'email
+    let email=document.querySelector('#email3');
+// les bases du REGEX
+// [a-z] : lettre de a A z
+// [0-9] : chiffres de 0 A 9
+//? : {0,1}
+//. 1 caractere
+//* {0,}
+//+ {1,}
+let modele=/^[a-z]+[0-9]{0,}@[a-z]{2,}\.com$/
+// alert('salut neal');
+// . <=> {1}
+//? <=> {0 ou 1}
+//+ <=> 
+// if (!modele.test(email.value)) {
+//     alert("email incorrect")
+// }
+console.log(modele.test(email.value));
+    // console.log("email est ",email.value)
+    // let email=document.getElementById('email3');
+// 
+
+}
+
+</script>
 </body>
 </html>
