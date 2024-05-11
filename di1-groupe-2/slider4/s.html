@@ -12,15 +12,30 @@
         <img src="s2.jpg" alt="">
     </div>
     <div id="controle" class="large">
+       <button onclick="back()" > << </button>
        <button onclick="afficher(1)" >1</button>
        <button onclick="afficher(2)">2</button>
        <button onclick="afficher(4)">3</button>
+       <button onclick="next()"> >> </button>
     
     </div>
 
     <script>
+let encours=0;
+
+function next() {
+  encours++;
+  if(encours>3){
+encours=1;
+  }
+  afficher(encours);
+
+
+}
+
         //definition de la fct
 function afficher(numero) {
+    encours=numero;
     //recuperer l'image 
     let t=document.querySelector("#slider img");
     if (numero==1)         t.src="s1.jpg";

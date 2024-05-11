@@ -63,16 +63,38 @@
 </form> -->
 <div >
     <form action="" id="formdiv">
+        <div id="error"></div>
         <label id="lab" for="signup">Sign up for Exclusive access
         </label>
-        <input  type="text" name="email3" id="email3" placeholder="Enter your email here">
-       <button type="button" onclick="checkerEmail()" >Send</button>
+        <input  type="text" name="email" id="email3" placeholder="Enter your email here">
+<input   onkeyup="verifierCin()"  type="text" name="cin" id="cin"  placeholder="Entrer votre cin"  >      
+        <button type="button"  onclick="verifierCin()" >Send</button>
     </form>
 </div>
 
 
 
+
 <script>
+
+//on veut creer une fonction qui verifie si le cin est correct ou pas 
+function verifierCin() {
+    //recuperer l'input du cin
+let input_cin=document.getElementById("cin");
+let er=document.getElementById("error");
+    //definir le modele (PATTERN) que doit respecter le cin : REGEX
+    let modele_cin=/^[a-z]{1,2}[0-9]{4,6}$/
+ 
+    //verifier si la valeur du cin correspond au pattern
+if ( ! modele_cin.test(input_cin.value)) {
+   er.innerHTML="CIN INCORRECT";
+}
+else{
+    er.innerHTML="";
+
+}
+}
+
 //definir la fonction 
 function checkerEmail() {
     // recuperer l'email
