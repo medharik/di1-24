@@ -67,8 +67,9 @@
         <label id="lab" for="signup">Sign up for Exclusive access
         </label>
         <input  type="text" name="email" id="email3" placeholder="Enter your email here">
-<input   onkeyup="verifierCin()"  type="text" name="cin" id="cin"  placeholder="Entrer votre cin"  >      
-        <button type="button"  onclick="verifierCin()" >Send</button>
+<input   onkeyup="verifierCin()"  type="text" name="cin" id="cin"  placeholder="Entrer votre cin"  > 
+<input type="text" name="tel" id="tel" placeholder="Entrer votre numero de telephone"     >
+        <button type="button"  onclick="verifierTel()" >Send</button>
     </form>
 </div>
 
@@ -76,6 +77,36 @@
 
 
 <script>
+function verifierTel() {
+    //recuperer l'input du cin
+let input_tel=document.getElementById("tel");
+let er=document.getElementById("error");
+    //definir le modele (PATTERN) que doit respecter le cin : REGEX
+    let modele_tel=/^0[0-9]{1}([ -/]{0,}[0-9]{2}){4}$/
+ // raccourcis : 
+ // \s  <=>  espace 
+ // \d <=> [0-9]
+ // \w <=> [a-z_]
+ // \S  <=>  tout sauf espace 
+ // \D <=> tout sauf [0-9] <=>[^0-9]
+ // \W <=> [a-z_] tout sauf  [a-z_]  <=> [^a-z_]
+//{0,1} <=> ?
+//{0,} <=> *
+//{1,} <=> +
+// un caracetere  <=> .
+
+ 
+    //verifier si la valeur du cin correspond au pattern
+if ( !modele_tel.test(input_tel.value)) {
+   er.innerHTML="TEL INCORRECT";
+}
+else{
+    er.innerHTML="";
+
+}
+}
+
+
 
 //on veut creer une fonction qui verifie si le cin est correct ou pas 
 function verifierCin() {

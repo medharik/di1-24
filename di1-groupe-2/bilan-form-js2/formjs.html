@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS FORM REGEX</title>
+    <link rel="stylesheet" href="styleform2.css">
+</head>
+<body>
+    
+    <h1>Inscription en ligne</h1>
+<div id="erreur"></div>
+    <form action="https://www.google.com/">
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <label for="cin">Cin</label>
+            <input type="text" name="cin" id="cin">
+            <button type="button" onclick="checkAll()">Ok</button>
+    </form>
+    <script>
+    let e=document.querySelector('#erreur');
+
+
+function checkerEmail() {
+    let email=document.querySelector('#email');
+    let modele_email=/^[a-z]{1,}[a-z.0-9]{0,}@gmail[.]com$/;
+    if (! modele_email.test(email.value)) {
+        e.innerHTML+="Email invalide<br>";
+    }
+
+}
+function checkerCin() {
+    let cin=document.querySelector('#cin');
+    let modele_cin=/^[a-z]{1,2}[0-9]{4,6}$/;
+    if (! modele_cin.test(cin.value)) {
+        e.innerHTML+="Cin invalide<br>";
+    }
+
+}
+
+function checkAll() {
+    e.innerHTML="";
+    let f=document.querySelector('form');
+    checkerEmail();
+    checkerCin();
+    if(e.innerHTML==""){
+f.submit();
+    }
+}
+    </script>
+</body>
+</html>

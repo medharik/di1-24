@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+}
+#erreur{
+    color: red;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+form{
+    text-align: center;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form Regex</title>
+</head>
+<body>
+    
+    <h2>Inscription en ligne</h2>
+
+    <div id="erreur"></div>
+    <form action="https://www.google.com/">
+        <label for="cin" >Cin</label>
+        <input type="text"  name="cin" id="cin">
+        <span></span>
+        <label for="email" >Email</label>
+        <input type="text" name="email" id="email">
+        <span></span>
+    <button type="button" onclick="validerTout()">Ok</button>
+
+    </form>
+
+    <script>
+        let erreurGlobal=document.getElementById('erreur');
+
+        
+        function cherckerCin() {
+    let cin=document.querySelector('#cin');
+    let er=document.querySelector('#cin + span');
+    let modele_cin=/^[a-zA-Z]{1,2}[0-9]{4,6}$/;
+    if(! modele_cin.test(cin.value)){
+        // er.innerHTML="Cin invalide";
+        erreurGlobal.innerHTML +="Cin invalide<br>";
+    }else{
+        er.innerHTML="";
+    }
+
+}
+function cherckerEmail() {
+    
+    let email=document.querySelector('#email');
+    let er=document.querySelector('#email + span');
+    let modele_email=/^\S+@gmail[.]com$/;
+    if(! modele_email.test(email.value)){
+        er.innerHTML="Email invalide";
+        erreurGlobal.innerHTML +="Email invalide<br>";
+
+      
+    }else{
+        er.innerHTML="";
+    }
+
+}
+
+function validerTout(){
+    erreurGlobal.innerHTML="";
+  
+
+    cherckerCin();
+    cherckerEmail();
+
+    if( erreurGlobal.innerHTML==""){
+        document.querySelector('form').submit();
+    }
+
+
+}
+
+
+    </script>
+</body>
+</html>
